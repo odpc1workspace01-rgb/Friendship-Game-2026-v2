@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="100%" height="100%">
+  <defs>
+    <!-- Gradients for flames -->
+    <linearGradient id="flameYellow" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FDE047"/>
+    </linearGradient>
+    <linearGradient id="flameRed" x1="0%" y1="100%" x2="30%" y2="0%">
+      <stop offset="0%" stop-color="#B91C1C"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="flameBlue" x1="0%" y1="100%" x2="70%" y2="0%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <!-- 3D Origami Blue 2 Gradients -->
+    <linearGradient id="origami1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="origami2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="origami3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="origamiLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="6" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- ================= TOP TORCH & FLAMES ================= -->
+  <g id="torch-group" transform="translate(10, 0)">
+    <!-- Blue outer flame on left -->
+    <path d="M 310 260 C 290 230, 245 170, 275 100 C 285 75, 305 45, 320 15 C 330 65, 360 110, 360 160 C 360 210, 335 245, 310 260 Z" 
+          fill="url(#flameBlue)" />
+    
+    <!-- Yellow center flame -->
+    <path d="M 345 260 C 335 210, 325 150, 345 80 C 355 45, 375 20, 385 5 C 390 40, 425 95, 415 170 C 405 215, 375 250, 345 260 Z" 
+          fill="url(#flameYellow)" />
+    
+    <!-- Red outer flame on right -->
+    <path d="M 380 260 C 410 230, 465 175, 445 95 C 435 60, 415 35, 400 15 C 415 55, 450 115, 440 170 C 430 220, 405 250, 380 260 Z" 
+          fill="url(#flameRed)" />
+
+    <!-- Torch Cauldron (Black base) -->
+    <!-- Top rim -->
+    <path d="M 280 265 L 440 265 L 430 280 L 290 280 Z" fill="#111827"/>
+    <!-- Bowl -->
+    <path d="M 290 280 L 430 280 L 395 315 L 325 315 Z" fill="#1F2937"/>
+    <!-- Torch stand ring -->
+    <rect x="320" y="315" width="80" height="8" rx="4" fill="#111827"/>
+    <polygon points="340,323 380,323 390,340 330,340" fill="#111827"/>
+  </g>
+
+  <!-- ================= ARCH & CELEBRATING ATHLETES ================= -->
+  <g id="athletes-arch" transform="translate(10, 0)">
+    <!-- Arch line above athletes -->
+    <path d="M 180 470 C 200 350, 520 350, 540 470" fill="none" stroke="#1F2937" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- 1. Blue Athlete (Left) -->
+    <g id="athlete-blue">
+      <circle cx="218" cy="460" r="18" fill="#2563EB"/>
+      <circle cx="238" cy="485" r="10" fill="#2563EB"/>
+      <path d="M 185 490 L 245 440 L 275 490 L 255 540 L 210 540 Z" fill="#2563EB"/>
+      <path d="M 245 440 L 295 480 L 285 495 L 245 460 Z" fill="#1D4ED8"/>
+    </g>
+
+    <!-- 2. Red Athlete (Center Left) -->
+    <g id="athlete-red">
+      <circle cx="330" cy="390" r="22" fill="#DC2626"/>
+      <path d="M 330 420 L 285 440 L 295 455 L 325 440 L 330 540 L 355 540 L 360 440 L 390 455 L 400 440 Z" fill="#DC2626"/>
+      <polygon points="330,420 285,440 240,410 250,395 295,425" fill="#EF4444"/>
+      <polygon points="350,420 395,440 435,410 425,395 385,425" fill="#EF4444"/>
+    </g>
+
+    <!-- 3. Yellow Athlete (Center Right) -->
+    <g id="athlete-yellow">
+      <circle cx="430" cy="385" r="22" fill="#EAB308"/>
+      <polygon points="430,415 390,440 375,415 385,400 420,425" fill="#FACC15"/>
+      <polygon points="430,415 470,440 505,410 495,395 460,425" fill="#FACC15"/>
+      <path d="M 410 425 L 450 425 L 455 540 L 415 540 Z" fill="#EAB308"/>
+    </g>
+
+    <!-- 4. Purple Athlete (Right) -->
+    <g id="athlete-purple">
+      <circle cx="510" cy="460" r="18" fill="#9333EA"/>
+      <circle cx="540" cy="495" r="10" fill="#9333EA"/>
+      <path d="M 535 490 L 475 440 L 445 490 L 465 540 L 510 540 Z" fill="#9333EA"/>
+      <path d="M 475 440 L 425 480 L 435 495 L 475 460 Z" fill="#7E22CE"/>
+    </g>
+  </g>
+
+  <!-- ================= 5 INTERLOCKING GREEN RINGS (ODPC1) ================= -->
+  <g id="odpc1-rings" transform="translate(10, 0)">
+    <!-- Ring 1: O -->
+    <g>
+      <circle cx="140" cy="580" r="62" fill="#FFFFFF" stroke="#15803D" stroke-width="15"/>
+      <text x="140" y="605" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="76" fill="#15803D" text-anchor="middle">O</text>
+    </g>
+
+    <!-- Ring 2: D -->
+    <g>
+      <circle cx="260" cy="580" r="62" fill="#FFFFFF" stroke="#15803D" stroke-width="15"/>
+      <text x="260" y="605" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="76" fill="#15803D" text-anchor="middle">D</text>
+    </g>
+
+    <!-- Ring 3: P -->
+    <g>
+      <circle cx="380" cy="580" r="62" fill="#FFFFFF" stroke="#15803D" stroke-width="15"/>
+      <text x="380" y="605" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="76" fill="#15803D" text-anchor="middle">P</text>
+    </g>
+
+    <!-- Ring 4: C -->
+    <g>
+      <circle cx="500" cy="580" r="62" fill="#FFFFFF" stroke="#15803D" stroke-width="15"/>
+      <text x="500" y="605" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="76" fill="#15803D" text-anchor="middle">C</text>
+    </g>
+
+    <!-- Ring 5: 1 -->
+    <g>
+      <circle cx="620" cy="580" r="62" fill="#FFFFFF" stroke="#15803D" stroke-width="15"/>
+      <text x="620" y="605" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="76" fill="#15803D" text-anchor="middle">1</text>
+    </g>
+  </g>
+
+  <!-- ================= TEXT: FRIENDSHIP GAMES 2026 ================= -->
+  <g id="event-title" transform="translate(10, 0)">
+    <text x="55" y="705" font-family="system-ui, -apple-system, 'Arial Black', sans-serif" font-weight="900" font-size="64" fill="#1E3A8A" letter-spacing="-1">
+      FRIENDSHIP
+    </text>
+    <text x="55" y="785" font-family="system-ui, -apple-system, 'Arial Black', sans-serif" font-weight="900" font-size="70" fill="#1E3A8A" letter-spacing="-1">
+      GAMES <tspan fill="#1D4ED8">2026</tspan>
+    </text>
+  </g>
+
+  <!-- ================= ORIGAMI 3D BLUE "2" ON RIGHT ================= -->
+  <g id="origami-2" filter="url(#softShadow)">
+    <!-- Top curve facet 1 -->
+    <polygon points="560,490 670,410 740,430 635,515" fill="url(#origami3)"/>
+    <!-- Top right facet 2 -->
+    <polygon points="670,410 740,430 775,505 700,535" fill="url(#origami2)"/>
+    <!-- Middle right facet 3 -->
+    <polygon points="740,430 775,505 770,575 705,570" fill="url(#origami1)"/>
+    <!-- Diagonal slope facet 4 -->
+    <polygon points="705,570 770,575 640,730 575,690" fill="url(#origami2)"/>
+    <!-- Diagonal facet 5 -->
+    <polygon points="705,570 640,730 580,780 520,740" fill="url(#origami3)"/>
+    <!-- Bottom left base corner facet 6 -->
+    <polygon points="520,740 580,780 540,840 500,810" fill="url(#origami1)"/>
+    <!-- Bottom horizontal facet 7 -->
+    <polygon points="540,840 760,840 730,785 580,780" fill="url(#origamiLight)"/>
+    <!-- Bottom fold shadow facet 8 -->
+    <polygon points="540,840 760,840 775,850 530,850" fill="url(#origami1)"/>
+  </g>
+</svg>

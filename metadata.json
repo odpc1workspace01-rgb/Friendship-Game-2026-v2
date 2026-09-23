@@ -1,0 +1,6 @@
+{
+  "name": "ODPC1 FRIENDSHIP GAMES 2026",
+  "description": "ระบบบันทึกผลการแข่งขัน คำนวณคะแนนรวม และ Live Leaderboard Game Show บนจอ LED / Projector สำหรับ ODPC1 Friendship Games 2026",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
